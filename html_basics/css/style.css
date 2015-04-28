@@ -1,0 +1,70 @@
+HEADER, FOOTER {
+	display: block;
+	padding: 1em;
+	text-align: center;
+	background-color: #9dafe3;
+	color: white;
+	font-size: 1.5em;
+}
+NAV {
+	display: block;
+	float: left;
+	height: 100%;
+	width: 18%;
+	padding: 1em;
+	padding-right: 0em;
+	/*position: fixed;*/
+	min-width: 200px;
+}
+NAV A {
+	display: block;
+	padding: 0.25em 0 0.25em 1em;
+	margin: 0.25em 0;
+	background-color: #f3f3fa;
+}
+NAV A:hover {
+	background-color: #e3e3ea;
+}
+MAIN {
+	float: right;
+	width: 80%;
+}
+SECTION {
+	border: 1px solid lightgrey;
+	margin: 1em 1em 1em 0;
+	padding: 0 1em 1em 1em;
+	display: block;
+}
+ASIDE {
+	float: right;
+	display: block;
+	width: 20em;
+	background-color: #9C633A;
+	padding: 1em;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+}
+FOOTER {
+	font-size: 1em;
+	clear: both;
+	background-color: #6d7fa3;
+	margin-top: 2em;
+}
+TABLE.pad-me TD {
+	padding: 0.25em 1em;
+}
+TABLE.pad-me TD:first-child{
+	padding: 0.25em 1em 0.25em 0;
+}
+FORM LABEL {
+	font-weight: normal;
+}
+FIELDSET {
+	display: inline-block;
+	float: left;
+	margin-right: 5em;
+}
+.red {
+	color: red;
+}

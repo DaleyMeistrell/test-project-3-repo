@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+	<!--
+	Any sort of meta-information about the document goes in the <head> tag.
+	This could include the document's title, style sheet resources, javascript resources, etc.
+	-->
+	<head>
+
+		<!--Any meta tags to describe metadata about this document-->
+		<meta charset="UTF-8" />
+		<meta name="author" content="Kenaniah Cerny" />
+		<meta name="description" content="A reference guide to HTML" />
+
+		<!--The document's title, which shows up in the browser tab-->
+		<title>Most of HTML in a nutshell</title>
+		
+		<!--Style sheets-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+
+		<!--Javascript to be loaded-->
+		<!--<script src="js/harlemshake.js"></script>-->
+		
+	</head>
+	
+	<!--The contents of the HTML document goes here-->
+	<body>
+
+		<!--Header can be used to identify header sections. This is NOT the same as <head>.-->
+		<header>
+			My example header might go here. <br /> The <code>&lt;br&gt;</code> tag creates a line break.
+		</header>
+
+		<!--Nav is used to identify the primary navigation for this document-->
+		<nav>
+
+			<div class="shake-it"></div>
+			
+			<div>
+				<h4>Navigation: </h4>
+				<a href="https://www.google.com" target="_blank">Google (opens new tab)</a>
+				<a href="http://www.tendergreens.com/locations/121/santa-monica/the-menu">What's for Lunch?</a>
+				<a href="missing_file.html">A <span class="red">Broken</span> Link</a>
+				<a href="basic_example.html">Basic Example</a>
+			</div>
+
+			<!--BR is a self-closing tag... it is one of the few!-->
+			<br />
+
+			<div>
+				<h4>Reference: </h4>
+				<a href="http://www.w3schools.com/tags/ref_byfunc.asp">HTML Element List</a>
+				<a href="http://www.w3schools.com/html/html_attributes.asp">HTML Attributes</a>
+				<a href="http://www.w3schools.com/html/html_forms.asp">HTML Forms</a>
+				<a href="http://www.w3schools.com/html/html_tables.asp">HTML Tables</a>
+				<a href="http://www.w3schools.com/html/html_head.asp">The <code>&lt;head&gt;</code> Element</a>
+				<a href="http://www.w3schools.com/html/html5_semantic_elements.asp">Semantic Elements</a>
+				<a href="http://html-ipsum.com/">HTML Ipsum</a>
+				<a href="http://lorempixel.com/">Lorem Pixel</a>
+			</div>
+
+		</nav>
+
+		<!--Used to identify the main content of the document-->
+		<main>
+
+			<!-- 
+			Section should be used to identify individual sections within a document. 
+			Each section should have its own heading element (<h1> - <h6>).
+			-->
+			<section>
+
+				<!--H1 represents the largest heading-->
+				<h1>This is my large heading</h1>
+
+				<p>This is a paragraph tag. This tag is normally used to 
+					contain basic text in paragraph format.
+
+					<strong>Adding whitespace the HTML source code does not affect how the paragraph wraps.</strong> Rather, text contents is wrapped automatically when the element runs out of space.
+				</p>
+				<p>A second paragraph may be created by using another <code>&lt;p&gt;</code> tag.</p>
+
+			</section>
+
+			<!--Section for basic list elements-->
+			<section>
+
+				<!--H2 is the second-largest heading-->
+				<h2>H2 Heading</h2>
+
+				<aside>
+					This is an example of the aside element, which may be used to contain content
+					that relates to the current section, similar to how an aside might be featured
+					in a book.
+				</aside>
+
+				<!--H4 is the 4th largest heading (there's 6 in all)-->
+				<h4>List Examples</h4>
+
+				<h5>An ordered list:</h5>
+				<ol>
+					<li>First item</li>
+					<li>Second item</li>
+					<li>Third item</li>
+					<li>Fourth item</li>
+				</ol>
+
+				<h5>An unordered list:</h5>
+				<ol>
+					<li>Apples</li>
+					<li>Carrots</li>
+					<li>Oranges</li>
+					<li>Bananas</li>
+				</ol>
+
+			</section>
+
+			<!--Section for tables-->
+			<section>
+
+				<h2>Tables</h2>
+
+				<h4>Tables can be used to display data...</h4>
+
+				<!--The class attribute on this table is used to provide styles from bootstrap.css-->
+				<table class="table table-bordered table-striped table-hover">
+					<caption>This is my table's optional caption</caption>
+					<thead>
+						<tr>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Score</th>
+							<th>Grade</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Some</td>
+							<td>Person</td>
+							<td>100%</td>
+							<td>A+</td>
+						</tr>
+						<tr>
+							<td>Another</td>
+							<td>Dude</td>
+							<td>92%</td>
+							<td>A-</td>
+						</tr>
+						<tr>
+							<td>Last</td>
+							<td>Place</td>
+							<td>84%</td>
+							<td>B</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<!--Colspan allows us to "span" a cell over a number of columns-->
+							<th colspan="4">This is the footer</th>
+						</tr>
+					</tfoot>
+				</table>
+
+				<h4>And to create complex layouts...</h4>
+
+				<!--This table uses a style attribute to specify its width-->
+				<table style="width: 100%;">
+					<tr>
+						<td>
+							<p>Lorem ipsum dolor sit amet, dolor sanctus fuisset ne duo. Ei diam soleat sea, quo eligendi similique scriptorem ea, dico illud perfecto cu duo. At his persius adipiscing, fuisset percipitur dissentiet quo in. Vis primis mollis probatus ex, quis regione pro ex.</p>
+						</td>
+						<td>
+							<p>Lorem ipsum dolor sit amet, dolor sanctus fuisset ne duo. Ei diam soleat sea, quo eligendi similique scriptorem ea, dico illud perfecto cu duo. At his persius adipiscing, fuisset percipitur dissentiet quo in. Vis primis mollis probatus ex, quis regione pro ex.</p>
+						</td>
+						<td>
+							<p>Lorem ipsum dolor sit amet, dolor sanctus fuisset ne duo. Ei diam soleat sea, quo eligendi similique scriptorem ea, dico illud perfecto cu duo. At his persius adipiscing, fuisset percipitur dissentiet quo in. Vis primis mollis probatus ex, quis regione pro ex.</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<p>Lorem ipsum dolor sit amet, dolor sanctus fuisset ne duo. Ei diam soleat sea, quo eligendi similique scriptorem ea, dico illud perfecto cu duo. At his persius adipiscing, fuisset percipitur dissentiet quo in. Vis primis mollis probatus ex, quis regione pro ex.</p>
+						</td>
+					</tr>
+				</table>
+
+			</section>
+
+			<!--Section for form elements-->
+			<section>
+
+				<h2>Form Elements</h2>
+
+				<!--The form tag is used to group input fields that should be submitted together-->
+				<form class="clearfix">
+
+					<!--Fieldsets can be used to group fields. They may have an optional <legend>-->
+					<fieldset>
+						<legend>Original Elements</legend>
+
+						<!--This table has a class of "pad-me" for styling purposes-->
+						<table class="pad-me">
+							<tr>
+								<td>Text field:</td>
+								<td><input name="field1" type="text" placeholder="type here..." required /></td>
+							</tr>
+							<tr>
+								<td>Password field:</td>
+								<td><input type="password" /></td>
+							</tr>
+							<tr>
+								<td>Select field:</td>
+								<td>
+									<select name="dropdown">
+										<option>value 1</option>
+										<option selected>value 2</option>
+										<option>value 3</option>
+										<option disabled>disabled value</option>
+										<option value="12">another value</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Textarea field:</td>
+								<td><textarea>contents here...</textarea></td>
+							</tr>
+							<tr>
+								<td>Radio buttons:</td>
+								<td>
+									<label><input type="radio" name="yn" value="yes" /> Yes</label>
+									&nbsp;&nbsp;&nbsp; 
+									<label><input type="radio" name="yn" value="no" /> No</label>
+								</td>
+							</tr>
+							<tr>
+								<td>Check boxes:</td>
+								<td>
+									<label><input type="checkbox" name="cb[]" value="1" /> Box 1</label>
+									&nbsp;&nbsp;&nbsp; 
+									<label><input type="checkbox" name="cb[]" value="2" /> Box 2</label>
+									&nbsp;&nbsp;&nbsp; 
+									<label><input type="checkbox" name="cb[]" value="3" /> Box 3</label>
+									&nbsp;&nbsp;&nbsp; 
+								</td>
+							</tr>
+							<tr>
+								<td>Input buttons:</td>
+								<td><input type="button" onclick="alert('Hello World!')" value="I'm a button" /></td>
+							</tr>
+							<tr>
+								<td>Submit / Reset:</td>
+								<td>
+									<input type="submit" />
+									<input type="reset" />
+								</td>
+							</tr>
+						</table>
+
+					</fieldset>
+
+					<fieldset>
+						<legend>HTML 5 Field Types</legend>
+						
+						<table class="pad-me">
+							<tr>
+								<td>Color field:</td>
+								<td><input type="color" value="#9dafe3" /></td>
+							</tr>
+							<tr>
+								<td>Date field:</td>
+								<td><input name="datefield" type="date" /></td>
+							</tr>
+							<tr>
+								<td>Email field:</td>
+								<td><input disabled type="email" /></td>
+							</tr>
+							<tr>
+								<td>Number field:</td>
+								<td><input type="number" /></td>
+							</tr>
+							<tr>
+								<td>Range field:</td>
+								<td><input type="range" /></td>
+							</tr>
+							<tr>
+								<td>Time field:</td>
+								<td><input type="time" /></td>
+							</tr>
+						</table>
+
+					</fieldset>
+
+				</form>
+
+			</section>
+
+		</main>
+
+		<footer>
+			My footer for this web page might go here
+		</footer>
+
+	</body>
+
+</html>
